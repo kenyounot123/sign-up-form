@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+  min-height: 100vh;
+}
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 35%;
+  height: 100vh;
+  background: url('halie-west-25xggax4bSA-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 20vh;
+  width: 100%;
+}
+.logo-container > img {
+  height: clamp(100px, 80%, 200px);
+}
+.title {
+  color: white;
+  opacity: 1;
+  font-size: 6.5rem;
+}
