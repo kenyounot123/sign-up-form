@@ -18,6 +18,50 @@
     </div>
   </div>
   <div class="right-section">
+    <div>
+      <p>This is not a real online Service! You know you need something like this in your life to help you realize your deepest dreams<br> Sign up now to get started.</p>
+      <p>You know you want to.</p>
+    </div>
+    <div>
+      <p>Let's do this!</p>
+      <form id="create-account" action="#" method="post">
+        <div class="first-form-row">
+          <label for="first_name">
+            First Name
+            <input type="text" name="first_name" id="first_name" placeholder="Thor" required>
+          </label>
+          <label for="last_name">
+            Last Name
+            <input type="text" name="last_name" id="last_name" placeholder="Odinson" required>
+          </label>
+        </div>
+        <div class="second-form-row">
+          <label for="email">
+            Email
+            <input type="email" name="email" id="email" placeholder="dog@gmail.com" required>
+          </label>
+          <label for="phone_number"> 
+            Phone Number
+            <input type="tel" name="phone_number" id="phone_number" placeholder="323-555-4689" pattern="\(\d{3})\[-.\s]?(\d{3})[-.\s]?(\d{4})" required>
+          </label>
+        </div>
+        <div class="third-form-row">
+          <label for="password">
+            Password
+            <input type="password" name="password" id="password" required>
+            <p class="requirements">* Passwords do not match</p>
+          </label>
+          <label for="confirm_pw"> 
+            Confirm Password
+            <input type="password" name="confirm_pw" id="confirm_pw" required>
+          </label>
+        </div>
+      </form>
+    </div>
+    <div>
+      <button form="create-account" name="submit" id="create-account-btn"><p>Create Account</p></button>
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
   </div>
 </body>
 </html>

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+:root {
+  --main-green: #596D48;
+  --main-grey: rgb(240, 240, 240);
+  --invalid-red: rgb(243, 87, 87);
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -50,4 +55,97 @@ body {
 .pic-credit *{
   color: white;
 
+}
+.right-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 65%;
+  height: 100vh;
+  background-color: var(--main-grey)
+}
+.right-section>div:first-child {
+  font-size: 2.5rem;
+  padding-top: 16vh;
+  padding-bottom: 3vh;
+  padding-left: 4vh;
+}
+.right-section>div>p:last-child {
+  margin-top: 30px;
+}
+.right-section>div:nth-child(2) {
+  font-size: 2.2rem;
+  padding-top: 2vh;
+  padding-bottom: 3vh;
+  padding-left: 4vh;
+  background-color: white;
+  box-shadow: 0 2px 5px 3px #C7C9BD;
+  height: 27vh;
+}
+.right-section>div:nth-child(2)>p {
+  margin-bottom: 15px;
+}
+#create-account {
+  display: flex;
+  flex-direction: column;
+}
+.first-form-row {
+  display: flex;
+  gap: 65px;
+}
+.second-form-row, .third-form-row {
+  display: flex;
+  gap: 65px;
+  margin-top: 20px;
+}
+#create-account>div {
+  font-size: 1.5rem
+}
+label, input {
+  display: block;
+}
+input {
+  border-radius: 5px;
+  border: 1px solid var(--main-grey);
+  padding: 5px;
+  margin-top: 3px;
+  width: clamp(180px, 30vh, 300px);
+  height: 21px;
+}
+input:focus {
+  outline: 0;
+  box-shadow: 3px 3px 10px grey;
+  border: 1px solid blue;
+}
+input:invalid:not(:focus):not(:placeholder-shown) {
+  border: 1px solid var(--invalid-red);
+}
+input:not(:focus):valid {
+  border: 1px solid green;  
+}
+.right-section>div:last-child>button {
+  background-color: var(--main-green);
+  border-radius: 5px;
+  padding: 11px 50px;
+  font-size: 1.7rem;
+  color: white;
+  box-shadow: 2px 2px 5px grey;
+  border: none;
+  margin-top: 4vh;
+  margin-left: 4vh;
+  font-family: inherit;
+}
+.right-section>div:last-child>p {
+  margin-top: 4vh;
+  margin-left: 4vh;
+}
+.right-section>div:last-child>p>a {
+  color: var(--main-green);
+  text-decoration: none;
+}
+.requirements {
+  margin-top: 3px;
+  overflow: visible;
+  color: red;
+  font-size: 1.2rem;
 }
